@@ -1,5 +1,5 @@
-# Copyright (C) 2015 The CyanogenMod Project
-#           (C) 2017-2018 The LineageOS Project
+#
+# Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,6 +12,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-# Rules for QCOM targets
-include $(TOPDIR)vendor/iris/build/core/qcom_target.mk
+BOARD_SEPOLICY_DIRS += \
+	hardware/google/pixel-sepolicy/flipendo \
+	hardware/google/pixel-sepolicy/turbo_adapter
